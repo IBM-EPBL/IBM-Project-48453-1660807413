@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(232, 63, 63, 0.75),rgba(0,0,0,0.75));
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #000;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    color: aliceblue;
+    font-family: 'Lucida Sans';
+}
+
+.form h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #c5ec75;
+    font-size: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+
+.form input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #c5ec75;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+.form input:focus{
+    outline: none;
+}
+
+::placeholder{
+    color: #fff;
+    font-family: Arial;
+}
+
+.btnn{
+    width: 240px;
+    height: 40px;
+    background: #c5ec75;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+}
+.btnn:hover{
+    background: #fff;
+    color: #c5ec75;
+}
+.btnn a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+.form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 50px;
+    text-align: center;
+}
+.form .link a{
+    text-decoration: none;
+    color: #c5ec75;
+}
+
+.form{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 50px;
+    text-align: center;
+}
+.form a{
+    text-decoration: none;
+    color: #c5ec75;
+}
+
+</style>
+<title>Index form</title>
+<body>
+
+    <div class="banner">
+        <div class="navbar">
+            <div class="img"></div>
+                <div class="center">
+                  <div class="title"><p></p> </div>
+                  <div class="sub_title"></div>
+           
+             <ul>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="{{'login'}}">LOGIN</a></li>
+                <li><a href="{{'register'}}">REGISTER</a></li>
+                <li><a href="{{'adminlogin'}}">ADMIN </a></li>
+            </ul>
+        </div>
+
+            
+
+        </div> 
+        <di class="img"></div>
+            <div class="center">
+              <div class="title"><p></p> </div>
+              <div class="sub_title"></div>
+            </div> 
+        <div class="content">
+            <h1>NUTRITION ASSISTANT<br><span>APPLICATION</span> <br></h1>
+            <p>Exercise is the king! Nutrition is the queen!! <br>
+                Put them together and you've got a kingdom</p>
+                
+
+               
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>

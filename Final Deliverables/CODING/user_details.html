@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="static/stllle.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body background="nutrition bg.png">
+<div class="container">
+<h1 class="title">USER DETAILS</h1>
+<div class="content">
+<form action="{{url_for('userdetails')}}" method="POST" class="login email">
+<div class="user-details">
+<div class="input-box">
+<label class="details">FULL NAME</label>
+<input type="text" placeholder="Enter your name" name="fullname">
+</div>
+<div class="input-box">
+<label class="details">HEIGHT</label>
+<input type="text" placeholder="Enter your Height" name="height">
+</div>
+<div class="input-box">
+<label class="details">WEIGHT</label>
+<input type="text" placeholder="Enter your Weight" name="weight">
+</div>
+<div class="input-box">
+<label class="details">BLOOD PRESSURE </label>
+<input type="text" placeholder="Enter your B.P mmHg value" name="bloodpressure">
+</div>
+<div class="input-box">
+<label class="details">DIABETICS </label>
+<input type="text" placeholder="Enter your Diabetics mg/dl value" name="diabetics">
+</div>
+<div class="input-box">
+<label class="details">AGE</label>
+<input type="text" placeholder="Enter your Age" name="age">
+</div>
+</div>
+<div class="btn">
+<a href="{{url_for('window')}}"> 
+<center>SUBMIT</center></a>
+
+</div>
+</form>
+</div>
+</div>
+</body>
+</html>
